@@ -37,7 +37,7 @@ Para visualizar o site, siga os passos abaixo:
 
 E pronto! Você poderá navegar pelo site da N13.
 
-## Ajudas especias da Alura!
+## 💻 Ajudas especias da Alura!
 
 1. Guilherme Lima
 2. Monica Hillman
