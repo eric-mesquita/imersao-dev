@@ -1,0 +1,55 @@
+[
+    {
+        "nome": "Oque é a N13?",
+        "imagem":"images\\n13_logo-removebg-preview.png",
+        "descricao": "N13 é a nossa equipe de skatistas. A \"crew\" começou no skate park da Maia, em Portugal, no ínicio do ano de 2025, e desde de lá estivemos a criar conteúdo para o Instagram e Youtube. A nossa primeira vídeo part é a do Marcelo, \"Marcelo trick show\". Veja os nossos membros ao clicar na nossa barra de pesquisa!"
+    },
+    {
+        "nome": "Marcelo",
+        "idade": 16,
+        "descricao": "Muleque do pop alto.",
+        "imagem": "images\\marcelo.png"
+    },
+    {
+        "nome": "Miguel",
+        "idade": 16,
+        "descricao": "Maluco do gap.",
+        "imagem": "images\\Screenshot 2025-11-23 183602.png"
+    },
+    {
+        "nome": "Eric",
+        "idade": 17,
+        "descricao": "Menino que quer voar.",
+        "imagem": "images\\Screenshot 2025-11-23 183303.png"
+    },
+    {
+        "nome": "Joel",
+        "idade": 20,
+        "descricao": "Doido dos grinds.",
+        "imagem": "images\\Screenshot 2025-11-23 183757.png"
+    },
+    {
+        "nome": "Ruben",
+        "idade": 18,
+        "descricao": "Mano das tricks diferenciadas.",
+        "imagem": "images\\Screenshot 2025-11-23 184108.png"
+    },
+    {
+        "nome": "Caxineiro",
+        "idade": 19,
+        "descricao": "Mestre do flatground.",
+        "imagem": "images\\Screenshot 2025-11-23 184440.png"
+    },
+    {
+        "nome": "Mineiro",
+        "idade": 18,
+        "descricao": "Cara com as tricks que flutuam.",
+        "imagem": "images\\Screenshot 2025-11-23 184717.png"
+    },
+    {
+        "nome": "Gabi",
+        "idade": 19,
+        "descricao": "Parça streetero com grande style.",
+        "imagem": "images\\Screenshot 2025-11-23 185039.png"
+    }
+]

@@ -1,0 +1,234 @@
+/* Importa a fonte do Google Fonts que já estava no seu HTML */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
+
+/* Estilos gerais para o corpo da página */
+body {
+    /* Imagem de fundo com um fallback de cor */
+    /* Adiciona uma sobreposição escura para melhorar a legibilidade do texto */
+    background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.8)), url('images\\1343898.png');
+    background-size: cover; /* Faz a imagem cobrir todo o espaço */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+
+    color: #f4f4f4; /* Branco para o texto principal, para boa legibilidade */
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilização do cabeçalho */
+header {
+     background: linear-gradient(rgba(26, 26, 26, 0.85), rgba(26, 26, 26, 0.85)), url('images/WhatsApp Image 2025-11-23 at 21.33.05.jpeg');
+     background-repeat: repeat  ;
+     background-size: contain;
+    color: #ffc107; /* Amarelo para o texto do cabeçalho */
+    padding: 1rem 2rem;
+    text-align: center;
+    border-bottom: 3px solid #ffc107; /* Borda amarela na parte inferior */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-family: 'Rubik 80s Fade', cursive; /* Usando a fonte especial para o título */
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header nav a {
+    color: #ffc107; /* Amarelo para os links de navegação */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #fff; /* O link fica branco ao passar o mouse */
+}
+
+/* Estilização da barra de busca */
+header input[type="text"] {
+    padding: 8px;
+    border: 2px solid #ffc107;
+    border-radius: 5px;
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+header button {
+    padding: 8px 15px;
+    background-color: #ffc107; /* Fundo amarelo */
+    color: #1a1a1a; /* Texto preto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #ffd54f; /* Amarelo mais claro ao passar o mouse */
+}
+
+header img {
+    max-width: 100px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+}
+
+/* Conteúdo principal */
+main {
+    flex: 1; /* Faz o main ocupar o espaço restante */
+    padding: 2rem 1rem; /* 2rem em cima/baixo, 1rem nos lados */
+    display: flex;
+    flex-direction: row; /* Organiza o conteúdo principal e o aside em linha */
+    justify-content: space-between; /* Alinha os itens nas extremidades */
+    align-items: flex-start; /* Alinha os itens no topo */
+}
+
+#aside2{
+    background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.8)), url('images\\Graffiti_BW_Mac.png');
+    background-size: cover; /* Faz a imagem cobrir todo o espaço */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+    border-radius: 8px;
+    color: white;
+    font-size: larger;
+    padding: 20px;
+}
+
+#aside2 img {
+    width: 400px;
+}
+
+/* Rodapé */
+footer {
+    background: linear-gradient(rgba(26, 26, 26, 0.85), rgba(26, 26, 26, 0.85)), url('images/WhatsApp Image 2025-11-23 at 21.33.05.jpeg');
+     background-repeat: repeat  ;
+     background-size: contain;
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 3px solid #ffc107; /* Borda amarela na parte superior */
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+footer a {
+    color: #ffc107; /* Amarelo para os links do rodapé */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos para os cards */
+.card {
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 350px; /* Exemplo de largura fixa para o card */
+    background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.8)), url('images\\Graffiti_BW_Mac.png');
+    background-size: cover; /* Faz a imagem cobrir todo o espaço */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+    display: inline-block;
+    font-size: x-large 
+}
+
+/* Estilos para a imagem e o iframe dentro dos cards */
+.card img,
+.card iframe {
+    max-width: 100%; /* Garante que não ultrapasse a largura do card */
+    height: auto; /* Mantém a proporção correta */
+    display: block; /* Remove espaços extras abaixo do elemento */
+    margin-top: 1rem; /* Adiciona um espaço acima da imagem/vídeo */
+    border-radius: 8px; /* Bordas arredondadas para um visual mais suave */
+}
+
+/* Novo container para os cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+    justify-content: center; /* Centraliza os cards no container */
+    flex: 1; /* Permite que o container cresça e ocupe o espaço disponível */
+}
+
+/* Novo estilo para centralizar o card individual */
+.card-container.individual-view {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Estilos específicos para o card "Oque é a N13?" */
+.card.card-home {
+
+    width: 100%; /* Ocupa mais espaço na tela */
+    max-width: 800px; /* Define uma largura máxima */
+    margin-right: auto;
+    margin-left:auto;
+    display: block; /* Necessário para que a margem automática funcione */
+    background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.8)), url('images\\Graffiti_BW_Mac.png');
+    background-size: cover; /* Faz a imagem cobrir todo o espaço */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+
+    border-left: 5px solid #ffc107; /* Uma borda amarela à esquerda para destaque */
+    text-align: center; /* Centraliza o texto */
+    font-size: x-large
+}
+
+.card.card-home h2 {
+    font-size: 2.2rem; /* Aumenta o tamanho do título */
+}
+
+/* Centraliza a imagem dentro do card-home */
+.card.card-home img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos para o novo menu de seleção */
+#search-select {
+    /* Aparência e espaçamento */
+    padding: 10px 40px 10px 15px; /* Espaçamento interno (direita maior para a seta) */
+    font-size: 16px;
+    font-weight: bold;
+    color: #111; /* Cor do texto (preto) */
+    background-color: #ffc107; /* Cor de fundo (amarelo) */
+    border: 2px solid #ffc107; /* Borda amarela */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer;
+
+    /* Remove a aparência padrão do navegador */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    /* Adiciona uma seta personalizada (preta) */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23111111%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.4-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 15px top 50%;
+    background-size: 12px;
+    min-width: 250px; /* Largura mínima */
+}
+
+/* Estilo para quando o menu está focado (clicado) */
+#search-select:focus {
+    border-color: #fff; /* Borda branca ao focar */
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5); /* Sombra branca suave */
+    outline: none; /* Remove a borda de foco padrão do navegador */
+}
