@@ -22,6 +22,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias web:
 - **HTML5**: Para a estrutura e semântica do conteúdo.
 - **CSS3**: Para a estilização e layout das páginas.
 - **JavaScript**: Para a interatividade, como a busca de membros e o carregamento dinâmico de dados a partir de um arquivo JSON.
+- **Gemini**: Para implementar, junto com o desenvolvedor, as tecnologias utilizadas.
 
 ## 🚀 Como Executar o Projeto
 
@@ -35,3 +36,9 @@ Para visualizar o site, siga os passos abaixo:
 3. Abra o arquivo `index.html` em seu navegador de preferência.
 
 E pronto! Você poderá navegar pelo site da N13.
+
+## Ajudas especias da Alura!
+
+1. Guilherme Lima
+2. Monica Hillman
+3. Ahirton Lopes
