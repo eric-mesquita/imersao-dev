@@ -232,3 +232,53 @@ footer a {
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.5); /* Sombra branca suave */
     outline: none; /* Remove a borda de foco padrão do navegador */
 }
+
+/* --- Media Queries para Responsividade --- */
+
+/* Para telas menores que 992px (tablets e celulares em modo paisagem) */
+@media (max-width: 992px) {
+    main {
+        flex-direction: column; /* Empilha o conteúdo principal e o aside */
+        align-items: center; /* Centraliza os itens empilhados */
+    }
+
+    .cards-container {
+        order: 2; /* Faz os cards aparecerem depois do aside */
+    }
+
+    #aside2 {
+        order: 1; /* Faz o aside aparecer primeiro */
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Para telas menores que 768px (celulares) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Empilha os itens do cabeçalho */
+        gap: 1rem; /* Adiciona um espaço entre os itens empilhados */
+    }
+
+    header nav a {
+        margin: 0 10px; /* Reduz a margem dos links de navegação */
+    }
+
+    main {
+        padding: 1rem; /* Reduz o padding do conteúdo principal */
+    }
+
+    .card {
+        width: 90%; /* Faz o card ocupar quase toda a largura */
+        margin: 1rem 0; /* Ajusta a margem */
+    }
+
+    #aside2 img {
+        width: 100%; /* Faz a imagem do aside se ajustar à largura */
+    }
+
+    footer ul li {
+        display: block; /* Empilha os itens do rodapé */
+        margin: 10px 0;
+    }
+}
